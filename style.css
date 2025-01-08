@@ -7,23 +7,31 @@ body{
     font-family: "Helvetica"; 
 }
 header{
+    /* position: fixed; */
     font-style: italic;
     font-size: larger;
     margin: 0 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 a{
     text-decoration: none;
     color:inherit
 }
 /*#endregion*/
+.menu{
+    align-self: center;
+}
 
-/*#region middle*/
-.middle{
+/*#region container*/
+.container{
+    justify-items: center;
     font-optical-sizing: auto;
-    margin: 0 15%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1%;
+    margin: 0 15%;
 }
 
 .tile{
@@ -76,12 +84,10 @@ footer{
 /*#endregion*/
 
 /*#region mediaQ*/
-@media (max-width: 380px) {
-    middle{
-        grid-template-columns: 1fr;
-        margin-left: 25%;
-        margin-right: 25%;
+@media (max-width: 850px) {
+    .container{
         align-items: center;
+        grid-template-columns: 1fr;
     }
 }
 /*#endregion*/
