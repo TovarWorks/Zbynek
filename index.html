@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zbyněk Ryba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Ryba</a></h1>
+        <div class="logo"><a href="index.html"></a></div>
         <nav class="menu">
             <a href="graphics.html">grafika</a>
             <a href="artefacts.html">artefakty</a>
@@ -16,31 +17,95 @@
     </header>
 
     <div class="container">
+
         <div class="tile">
-            <a href="detail.html"><img src="./img/tovar.webp"/></a>
-            <h2>detail</h2>
-        </div>
-        <div class="tile">
-            <a href="detail.html"><img src="./img/tovar.webp"/></a>
-            <h2>detail</h2>
-        </div>
-        <div class="tile">
-            <a href="detail.html"><img src="./img/tovar.webp"/></a>
-            <h2>detail</h2>
-        </div>
-        <div class="tile">
-            <a href="detail.html"><img src="./img/tovar.webp"/></a>
+            <img src="./img/tovar.webp" id="openPopup"/>
             <h2>detail</h2>
         </div>
 
+        <div class="popup" id="popup">
+            <div class="popup-content bg-black text-white p-6 shadow-lg max-w-4xl w-11/12 relative">
+                <div class="flex justify-between items-center mb-4">
+                    <img src="https://via.placeholder.com/50" alt="Logo" class="h-12">
+                    <button class="text-black-500 hover:text-white-700 text-xl font-bold" id="closePopup">&times;</button>
+                </div>
+                <div class="flex gap-4">
+                    <img src="./img/tovar.webp" alt="Popup Image" class="w-1/3 ">
+                    <div class="text-left">
+                        <h2 class="text-2xl font-bold mb-2">More Information</h2>
+                        <p class="text-white-700">This is the additional information displayed in the popup. You can add more content here to describe the image or provide further details.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <div class="tile">
+            <img src="./img/tovar.webp" id="openPopup2"/>
+            <h2>detail</h2>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content bg-black text-white p-6 shadow-lg max-w-4xl w-11/12 relative">
+                <div class="flex justify-between items-center mb-4">
+                    <img src="https://via.placeholder.com/50" alt="Logo" class="h-12">
+                    <button class="text-black-500 hover:text-white-700 text-xl font-bold" id="closePopup">&times;</button>
+                </div>
+                <div class="flex gap-4">
+                    <img src="./img/tovar.webp" alt="Popup Image" class="w-1/3 ">
+                    <div class="text-left">
+                        <h2 class="text-2xl font-bold mb-2">More Information</h2>
+                        <p class="text-white-700">This is the additional information displayed in the popup. You can add more content here to describe the image or provide further details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile">
+            <img src="./img/tovar.webp" id="openPopup3"/>
+            <h2>detail</h2>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content bg-black text-white p-6 shadow-lg max-w-4xl w-11/12 relative">
+                <div class="flex justify-between items-center mb-4">
+                    <img src="https://via.placeholder.com/50" alt="Logo" class="h-12">
+                    <button class="text-black-500 hover:text-white-700 text-xl font-bold" id="closePopup">&times;</button>
+                </div>
+                <div class="flex gap-4">
+                    <img src="./img/tovar.webp" alt="Popup Image" class="w-1/3 ">
+                    <div class="text-left">
+                        <h2 class="text-2xl font-bold mb-2">More Information</h2>
+                        <p class="text-white-700">This is the additional information displayed in the popup. You can add more content here to describe the image or provide further details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tile">
+            <img src="./img/tovar.webp" id="openPopup4"/>
+            <h2>detail</h2>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content bg-black text-white p-6 shadow-lg max-w-4xl w-11/12 relative">
+                <div class="flex justify-between items-center mb-4">
+                    <img src="https://via.placeholder.com/50" alt="Logo" class="h-12">
+                    <button class="text-black-500 hover:text-white-700 text-xl font-bold" id="closePopup">&times;</button>
+                </div>
+                <div class="flex gap-4">
+                    <img src="./img/tovar.webp" alt="Popup Image" class="w-1/3 ">
+                    <div class="text-left">
+                        <h2 class="text-2xl font-bold mb-2">More Information</h2>
+                        <p class="text-white-700">This is the additional information displayed in the popup. You can add more content here to describe the image or provide further details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     
     <div class="contact">
         <ul>
             <li>Ryba Zbyněk</li>
-            <li>email: doowop@gmail.com</li>
-            <li>mobil: +420 777 777 777</li> 
+            <li>email: ryba@gmail.com</li>
+            <li>mobil: +420 601 592 301</li> 
             <li>Kyjov 697 01</li> 
         </ul>
     </div>
