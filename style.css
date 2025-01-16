@@ -34,6 +34,10 @@ li{
     align-self: center;
 }
 
+.logo img{
+    width: 200px;
+}
+
 /*#region container*/
 .container{
     justify-items: center;
