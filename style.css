@@ -19,6 +19,14 @@ a{
     text-decoration: none;
     color:inherit
 }
+nav{
+    font-size: 40px;
+}
+li{
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
 /*#endregion*/
 .menu{
     align-self: center;
@@ -68,7 +76,6 @@ a{
 
 /*#region contact*/
 .contact{
-    text-align: center;
     margin: 10% 10%;
     font-size: 50px;
 }
