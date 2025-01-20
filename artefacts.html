@@ -4,31 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zbyněk Ryba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Ryba</a></h1>
+        <div class="logo"><a href="index.html"> <img src="./img/logo.jpeg"/></a></div>
         <nav class="menu">
-            <a href="graphics.html">grafika</a>
-            <a href="artefacts.html">artefakty</a>
+            <a href="graphics.html">Grafika</a>
+            <a href="artefacts.html">Artefakty</a>
         </nav>
     </header>
 
     <div class="container">
+
         <div class="tile">
-            <a href="detail.html"><img src="./img/tovar.webp"/></a>
-            <h2>detail</h2>
+            <img src="./img/tovar.webp"
+            data-popup-title="Project 1"
+            data-popup-images="./img/tovar.webp,./img/tovar.webp"
+            data-popup-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Aenean mi magna, iaculis at magna ac, vehicula efficitur libero. 
+            Vivamus ut facilisis lectus. Cras nec arcu eu dolor dictum posuere. 
+            Suspendisse lacinia eget elit eget varius. Sed convallis enim urna. 
+            Duis mattis urna elit, eu egestas mauris scelerisque a. 
+            Nunc egestas lorem et est lacinia gravida. Sed eu augue eu ex tempor eleifend. 
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;"/>
+            <h2>Project 1</h2>
         </div>
+        
+        <div class="tile">
+            <img src="./img/tovar.webp"
+            data-popup-title="Project 2"
+            data-popup-images="./img/tovar.webp,./img/tovar.webp"
+            data-popup-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Aenean mi magna, iaculis at magna ac, vehicula efficitur libero. 
+            Vivamus ut facilisis lectus. Cras nec arcu eu dolor dictum posuere. 
+            Suspendisse lacinia eget elit eget varius. Sed convallis enim urna. 
+            Duis mattis urna elit, eu egestas mauris scelerisque a. 
+            Nunc egestas lorem et est lacinia gravida. Sed eu augue eu ex tempor eleifend. 
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;"/>            
+            <h2>Project 2</h2>
+        </div>
+
+        <div class="tile">
+            <img src="./img/tovar.webp"
+            data-popup-title="Project 3"
+            data-popup-images="./img/tovar.webp,./img/tovar.webp"
+            data-popup-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Aenean mi magna, iaculis at magna ac, vehicula efficitur libero. 
+            Vivamus ut facilisis lectus. Cras nec arcu eu dolor dictum posuere. 
+            Suspendisse lacinia eget elit eget varius. Sed convallis enim urna. 
+            Duis mattis urna elit, eu egestas mauris scelerisque a. 
+            Nunc egestas lorem et est lacinia gravida. Sed eu augue eu ex tempor eleifend. 
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;"/>
+            <h2>Project 3</h2>
+        </div>
+        
+        <div class="tile">
+            <img src="./img/tovar.webp"
+            data-popup-title="Project 4"
+            data-popup-images="./img/tovar.webp,./img/tovar.webp"
+            data-popup-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Aenean mi magna, iaculis at magna ac, vehicula efficitur libero. 
+            Vivamus ut facilisis lectus. Cras nec arcu eu dolor dictum posuere. 
+            Suspendisse lacinia eget elit eget varius. Sed convallis enim urna. 
+            Duis mattis urna elit, eu egestas mauris scelerisque a. 
+            Nunc egestas lorem et est lacinia gravida. Sed eu augue eu ex tempor eleifend. 
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;"/>
+            <h2>Project 4</h2>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="popup-content bg-black text-white p-6 shadow-lg max-w-7xl w-11/12 relative">
+                <!-- First row: Logo and close button -->
+                <div class="flex justify-between items-center mb-4">
+                    <img src="img/logo_white2.jpeg" alt="Logo" class="h-12">
+                    <button class="text-white hover:text-gray-400 text-xl font-bold" id="closePopup">&times;</button>
+                </div>
+
+                <!-- Second row: Heading -->
+                <div class="text-left mb-4">
+                    <h2 class="text-5xl font-bold" id="popupTitle">More Information</h2>
+                </div>
+
+                <!-- Third row: Content with images and text -->
+                <div class="flex gap-4">
+                <div class="flex flex-col gap-2 w-1/2" id="popupImagesContainer">
+                    <!-- Images will be dynamically added here -->
+                </div>
+                <div class="text-left w-1/3">
+                    <p class="text-gray-300" id="popupDescription">This is the additional information displayed in the popup. You can add more content here to describe the image or provide further details.</p>
+                </div>
+        </div>
+            </div>
+        </div>
+
     </div>
     
-    <div class="contact">
+    <div class="contact flex justify-between">
         <ul>
             <li>Ryba Zbyněk</li>
-            <li>email: doowop@gmail.com</li>
-            <li>mobil: +420 777 777 777</li> 
+            <li>email: ryba@gmail.com</li>
+            <li>mobil: +420 601 592 301</li> 
             <li>Kyjov 697 01</li> 
         </ul>
+        <img src="img/logo2.jpeg" alt="Logo" class="h-40 self-center">
     </div>
 
     <footer>
