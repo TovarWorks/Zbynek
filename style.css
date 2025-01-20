@@ -4,7 +4,7 @@ html{
 }
 body{
     font-family: "Helvetica"; 
-    cursor: url('img/black-circle.png') 16 16, auto;
+    cursor: url('img/circle.png') 16 16, auto;
 }
 header{
     font-size: larger;
