@@ -7,7 +7,6 @@ body{
 }
 
 header{
-    font-style: italic;
     font-size: larger;
     margin: 0 2%;
     display: flex;
