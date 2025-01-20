@@ -4,8 +4,8 @@ html{
 }
 body{
     font-family: "Helvetica"; 
+    cursor: url('img/black-circle.png') 16 16, auto;
 }
-
 header{
     font-size: larger;
     margin: 0 2%;
@@ -55,7 +55,7 @@ li{
 
 /*#region tile*/
 .tile{
-    cursor: pointer;
+    cursor: url('img/triangle.png') 16 16, auto;
     position: relative;
     overflow: hidden;
     width: 800px;
