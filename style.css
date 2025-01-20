@@ -16,7 +16,7 @@ header{
 
 a{
     text-decoration: none;
-    color:inherit
+    cursor: url('img/triangle.png') 16 16, auto;
 }
 nav{
     font-size: 6vh;
