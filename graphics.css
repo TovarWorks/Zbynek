@@ -1,0 +1,15 @@
+.container{
+    justify-items: center;
+    font-optical-sizing: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5%;
+}
+
+.tile{
+    cursor: url('img/triangle.png') 16 16, auto;
+    position: relative;
+    overflow: hidden;
+    width: 550px;
+    background-color: black;
+}
