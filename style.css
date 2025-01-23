@@ -142,6 +142,8 @@ footer{
     .tile{
         width: 100%;
     }
-
+    .contact{
+        font-size: 4vh;
+    }
 }
 /*#endregion*/
