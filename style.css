@@ -1,114 +1,87 @@
 /*#region general*/
-html{
+*{
     margin: 0;
-}
-body{
-    font-family: "Helvetica"; 
-    cursor: url('img/circle.png') 16 16, auto;
-}
-header{
-    font-size: larger;
-    margin: 0 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-a{
-    text-decoration: none;
-    cursor: url('img/triangle.png') 16 16, auto;
-}
-nav{
-    font-size: 6vh;
-    margin-right: 2%;
-    margin-top: 1%;
-
-}
-li{
-    list-style-type: none;
     padding: 0;
-    margin: 0;
-}
-/*#endregion*/
-.menu{
-    align-self: center;
-    display: inline-flex;
-}
-.menu a {
-    margin-right: 10%;
+    box-sizing: border-box;
 }
 
-.logo img{
-    width: 200px;
+body{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
 
-/*#region container*/
-.container{
-    justify-items: center;
-    font-optical-sizing: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5%;
-    margin: 5% auto;
-}
-/*#endregion*/
 
-/*#region tile*/
-.tile{
-    cursor: url('img/triangle.png') 16 16, auto;
-    position: relative;
-    overflow: hidden;
-    width: 800px;
-    background-color: black;
-}
-.tile img{
+
+header{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.5s ease-in-out;
-}
-.tile h2{
+    padding: 15px 20px;
     position: absolute;
-    top: 10%;
-    left: 5%;
-    font-size: 5rem;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    text-align: center;
-    color: white;
-}
-.tile:hover img {
-    opacity: 0;
-}
-
-.tile:hover h2 {
-  opacity: 1;
-}
-/*#endregion*/
-
-/*#region popup*/
-.popup {
-    display: none;
-    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    z-index: 1;
 }
-.popup button:hover{
-    cursor: url('img/triangle.png') 16 16, auto;
-}
+
 /*#endregion*/
 
-/*#region contact*/
-.contact{
-    margin: 2% 13.5%;
-    font-size: 50px;
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
-/*#endregion*/
+
+.title{
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 1%;
+} 
+
+.menu{
+    font-size: 4rem;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.menu li{
+    display: inline;
+
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+    cursor: url('img/triangle.png') 16 16, auto;
+}
+.menu a:hover {
+    color: lightgray;
+}
+
+.project{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 4rem;
+    margin: 0 5%;
+}
+.image-name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 8rem;
+}
 
 /*#region footer*/
 footer{
@@ -116,34 +89,5 @@ footer{
     text-align: center;
     font-weight: bolder;
     font-size: 20;
-}
-/*#endregion*/
-
-/*#region mediaQ*/
-@media (max-width: 1500px) {
-    .container{
-        align-items: center;
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 500px) {
-    .menu{
-        font-size: 4vh;
-        margin-right: 5%;
-    }
-    header img{
-        width: 1vh;
-
-    }
-    .logo{
-        width: 200px; 
-
-    }
-    .tile{
-        width: 100%;
-    }
-    .contact{
-        font-size: 4vh;
-    }
 }
 /*#endregion*/
