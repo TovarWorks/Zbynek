@@ -1,37 +1,20 @@
-const popupDescription = document.getElementById('popupDescription');
-const popupImagesContainer = document.getElementById('popupImagesContainer');
-const closePopup = document.getElementById('closePopup');
-const images = document.querySelectorAll('.container img');
+const images = [
+    { src: "img/ff.jpg", name: "Fakin Fakit" },
+    { src: "img/kino.jpg", name: "Kino Linka" },
+    { src: "img/sr.jpg", name: "Slovácký Rock" },
+];
 
-// Show popup when an image is clicked
-images.forEach(image => {
-    image.addEventListener('click', () => {
-        popup.style.display = 'flex';
-        popupTitle.textContent = image.dataset.popupTitle;
-        popupDescription.textContent = image.dataset.popupContent;
+let index = 0;
 
-        // Clear previous images
-        popupImagesContainer.innerHTML = '';
+function changeBackground() {
+    
+    document.body.style.backgroundImage = `url(${images[index].src})`;
+    document.getElementById("image-name").textContent = images[index].name;
+    index = (index + 1) % images.length;
+}
 
-        // Add new images to the popup
-        const imageUrls = image.dataset.popupImages.split(',');
-        imageUrls.forEach(url => {
-            const img = document.createElement('img');
-            img.src = url;
-            /*img.classList.add('rounded-lg', 'w-full');*/
-            popupImagesContainer.appendChild(img);
-        });
-    });
-});
+// Ensure image changes every 5 seconds
+setInterval(changeBackground, 5000);
 
-// Close popup when button is clicked
-closePopup.addEventListener('click', () => {
-    popup.style.display = 'none';
-});
-
-// Close popup when clicking outside the popup content
-popup.addEventListener('click', (e) => {
-    if (e.target === popup) {
-        popup.style.display = 'none';
-    }
-});
+// Set the initial background after the page loads
+window.onload = changeBackground;
