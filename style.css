@@ -6,6 +6,7 @@
 }
 
 body{
+    cursor: url('img/circle.png'), auto;
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -59,7 +60,7 @@ header{
     text-decoration: none;
     color: white;
     transition: color 0.3s ease-in-out;
-    cursor: url('img/triangle.png') 16 16, auto;
+    cursor: url('img/triangle.png'), auto;
 }
 .menu a:hover {
     color: lightgray;
