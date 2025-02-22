@@ -3,8 +3,11 @@ const images = [
     { src: "img/kino.jpg", name: "Kino Linka" },
     { src: "img/sr.jpg", name: "Slovácký Rock" },
 ];
-
 let index = 0;
+
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+
 
 function changeBackground() {
     
@@ -18,3 +21,13 @@ setInterval(changeBackground, 5000);
 
 // Set the initial background after the page loads
 window.onload = changeBackground;
+
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
