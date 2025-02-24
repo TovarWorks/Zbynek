@@ -1,5 +1,5 @@
 /*#region general*/
-*{
+html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,8 +9,10 @@ body{
     cursor: url('img/circle.png'), auto;
     width: 100vw;
     height: 100vh;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed; 
     transition: background-image 1s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -41,13 +43,16 @@ header{
 }
 
 .title{
-    font-size: 5rem;
-    font-weight: bold;
-    margin-top: 1%;
+    font-size: 3rem;
 } 
-
+.title a{
+    cursor: url('img/triangle.png'), auto;
+}
+.title a:hover{
+    color: lightgray;
+}
 .menu{
-    font-size: 2rem;
+    font-size: 3rem;
     list-style: none;
     display: flex;
     gap: 20px;
