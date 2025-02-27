@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1%;
+    margin: 0 5%;
 }
 
 .tile{

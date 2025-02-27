@@ -9,7 +9,6 @@ html{
 header{
     width: 100%;
     padding: 15px 20px;
-    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -44,10 +43,7 @@ a:hover {
     display: flex;
     gap: 20px;
 }
-.menu li{
-    display: inline;
 
-}
 .menu a{
     text-decoration: none;
     transition: color 0.3s ease-in-out;
