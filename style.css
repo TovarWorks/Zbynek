@@ -46,7 +46,7 @@ header{
     font-size: 3rem;
 } 
 .title a{
-    cursor: url('img/triangle.png'), auto;
+    cursor: url('img/right-arrow.png'), auto;
 }
 .title a:hover{
     color: lightgray;
@@ -65,7 +65,7 @@ header{
     text-decoration: none;
     color: white;
     transition: color 0.3s ease-in-out;
-    cursor: url('img/triangle.png'), auto;
+    cursor: url('img/right-arrow.png'), auto;
 }
 .menu a:hover {
     color: lightgray;
