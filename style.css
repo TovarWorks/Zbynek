@@ -26,6 +26,9 @@ body{
 a:hover {
     color: lightgray;
 }
+a{
+    cursor: url('img/hollow-circle.png'), auto;
+}
 /*#endregion*/
 
 
@@ -33,9 +36,7 @@ a:hover {
 .title{
     font-size: 3rem;
 } 
-.title a{
-    cursor: url('img/right-arrow.png'), auto;
-}
+
 
 .menu{
     font-size: 3rem;
@@ -47,7 +48,6 @@ a:hover {
 .menu a{
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-    cursor: url('img/right-arrow.png'), auto;
 }
 
 
@@ -71,9 +71,7 @@ footer{
     font-size: 20;
 }
 
-footer a{
-    cursor: url('img/right-arrow.png'), auto;
-}
+
 
 
 @media (max-width: 500px) {

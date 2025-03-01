@@ -23,7 +23,7 @@
     height: 100%;
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
-    cursor: url('img/right-arrow.png'), auto;
+    cursor: url('img/hollow-circle.png'), auto;
 }
 .tile h2{
     position: absolute;
