@@ -42,7 +42,7 @@ a{
     font-size: 3rem;
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 35px;
 }
 
 .menu a{
@@ -73,8 +73,7 @@ footer{
 
 
 
-
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     nav a{
         display: none;
     }
