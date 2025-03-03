@@ -4,11 +4,11 @@
 /*#region container*/
 .container{
     justify-items: center;
+    align-items: center;
     font-optical-sizing: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1%;
-    margin: 0 5%;
 }
 
 .tile{
