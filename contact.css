@@ -1,0 +1,63 @@
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 2rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.left-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.right-section {
+    padding-top: 5.5rem;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+
+}
+
+
+.address {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-person {
+    margin-bottom: 30px;
+}
+
+.contact-person p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
