@@ -1,15 +1,8 @@
 const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
+const offScreenMenu = document.querySelector('.off-screen-menu');
 
 menuBtn.addEventListener('click', () => {
-    if(!menuOpen) {
-      menuBtn.classList.add('open');
-      menuOpen = true;
-    } else {
-      menuBtn.classList.remove('open');
-      menuOpen = false;
-    }
-    document.getElementById("menu").classList.toggle("active");
-
+  menuBtn.classList.toggle('open');
+  offScreenMenu.classList.toggle('open');
   });
 
