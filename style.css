@@ -28,6 +28,8 @@ a:hover {
 }
 a{
     cursor: url('img/hollow-circle.png'), auto;
+    text-decoration: none;
+    color: inherit;
 }
 /*#endregion*/
 
@@ -43,6 +45,7 @@ a{
     list-style: none;
     display: flex;
     gap: 35px;
+    margin-right: 50px;
 }
 
 .menu a{
@@ -87,7 +90,6 @@ footer{
         height: 80px;
         cursor: pointer;
         transition: all .5s ease-in-out;
-        border: 3px solid black; 
     }
 
     .menu-btn__burger {

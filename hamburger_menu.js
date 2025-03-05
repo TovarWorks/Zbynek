@@ -9,4 +9,7 @@ menuBtn.addEventListener('click', () => {
       menuBtn.classList.remove('open');
       menuOpen = false;
     }
+    document.getElementById("menu").classList.toggle("active");
+
   });
+
