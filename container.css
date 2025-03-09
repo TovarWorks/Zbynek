@@ -48,7 +48,7 @@
     color: white;
 }
 .tile:hover img {
-    opacity: 0;
+    opacity: 0.3; 
 }
 
 .tile:hover h2 {
