@@ -8,7 +8,7 @@ html{
 
 header{
     width: 100%;
-    padding: 15px 20px;
+    padding: 15px 0px;
     top: 0;
     left: 0;
     display: flex;
@@ -18,6 +18,8 @@ header{
 }
 
 body{
+    margin: 0;
+    padding: 0;
     cursor: url('img/circle.png'), auto;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 
@@ -37,6 +39,7 @@ a{
 
 .title{
     font-size: 3rem;
+    margin-left: 35px;
 } 
 
 
@@ -87,11 +90,9 @@ a{
 }
 
 
-footer{
+#brand{
     margin-top: 5%;
     text-align: start;
-    font-weight: bolder;
-    font-size: 20;
 }
 
 
