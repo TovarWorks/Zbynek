@@ -30,12 +30,26 @@ body{
     position: absolute;
     top: 10%;
     left: 40%;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     text-align: center;
     color: white;
     cursor: url('img/hollow-circle.png'), auto;
+}
+.tile span{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    font-size: 1rem;
+    padding: 2px;
+    opacity: 0;
+    border: 1px solid white;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    color: white;
+    cursor: url('img/hollow-circle.png'), auto;
+
 }
 .tile p{
     padding: 5%;
@@ -56,6 +70,9 @@ body{
 
 .tile:hover h2 {
   opacity: 1;
+}
+.tile:hover span{
+    opacity: 1;
 }
 .tile:hover p {
     opacity: 1;
