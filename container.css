@@ -14,8 +14,6 @@
 .tile{
     position: relative;
     overflow: hidden;
-    width: 650px; 
-    height: 425px; 
     background-color: black;
 }
 .tile img{
@@ -61,14 +59,21 @@
   }
 
 
-@media (max-width: 850px) {
+  
+@media (max-width: 1850px) {
     .container{
-        align-items: center;
-        grid-template-columns: 1fr;
-        margin: 0;
+        grid-template-columns: 1fr 1fr;
     }
     .tile{
+        width: 100%; 
+    }
+}
 
+@media (max-width: 850px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .tile{
         width: 100%; 
     }
 }
