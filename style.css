@@ -3,6 +3,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
 }
 
 
@@ -22,7 +23,6 @@ body{
     padding: 0;
     cursor: url('img/circle.png'), auto;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-
 }
 
 a:hover {
@@ -89,10 +89,10 @@ a{
     margin: 0 5%;
 }
 
-
-#brand{
-    margin-top: 5%;
-    text-align: start;
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 
