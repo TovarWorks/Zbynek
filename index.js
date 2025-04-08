@@ -8,7 +8,6 @@ let index = 0;
 function changeBackground() {
     
     document.body.style.backgroundImage = `url(${images[index].src})`;
-    document.getElementById("image-name").textContent = images[index].name;
     index = (index + 1) % images.length;
 }
 
